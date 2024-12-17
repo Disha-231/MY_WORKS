@@ -1,0 +1,144 @@
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+.dot {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  pointer-events: none;
+  transform: rotate(-90deg) scale(2.625);
+  z-index: 999999999999;
+}
+.dot.button-hover svg {
+  transform: rotate(-90deg) scale(2.625);
+}
+.dot svg {
+  width: 100%;
+  position: absolute;
+  transform: rotate(-90deg);
+  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+}
+.dot svg path {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  
+}
+.button:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #fff;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: 50% 50%;
+}
+.button.pulse span {
+  color: #000;
+}
+.button.pulse:before {
+  animation: pulse 1000ms forwards cubic-bezier(0.23, 1, 0.32, 1);
+}
+.button span {
+  font-size: 10px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+}/*# sourceMappingURL=pointer.css.map */
+.container1 {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#011920;
+  color: #fff;
+  overflow: hidden;
+  margin: 0;
+  font-size: 600;
+}
+
+.counter-container{
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 50px;
+    text-align: center;
+}
+
+.counter-container{
+  /* border: 2px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 50px;
+  text-align: center;
+}
+
+.counter{
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+.counter-container i{
+  font-size: 64px;
+}
+
+@media screen and (max-width:735px) {
+  .container{
+      flex-direction: column;
+  }
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+
+#changingText {
+  color: #fff;
+  border-right: 1px solid black;
+  animation: cursoranim 1s linear infinite;
+}
+
+@keyframes cursoranim {
+  50% {
+    border-right: 1px solid rgba(0, 0, 0, 0);
+  }
+}

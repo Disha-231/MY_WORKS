@@ -1,0 +1,66 @@
+ul.erla-accordion {
+  font-family: sans-serif;
+  font-size: 1.2em;
+  background-color: transparent;
+  margin: 5px;
+  list-style-type: none;
+  padding-left: 0;
+  color: #919eab;;
+}
+ul.erla-accordion ul {
+
+  color: #ddd;
+  transition: height 0.3s;
+  height: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.erla-accordion ul .expander {
+  color: #ccc;
+}
+ul.erla-accordion ul .expander.expanded {
+  color: #ffffff;
+}
+ul.erla-accordion ul ul {
+ 
+  color: #ccc;
+}
+ul.erla-accordion li {
+  overflow: hidden;
+}
+ul.erla-accordion li .content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  transition: all 0.15s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+  font-size: var(--fs-15);
+  font-weight: var(--fw-500);
+  padding: 8px 24px;
+}
+ul.erla-accordion li .content:hover {
+  color: #ffffff;
+}
+ul.erla-accordion li .content.selected {
+  font-weight: bold;
+}
+ul.erla-accordion .expander {
+  width: 35px;
+  height: 100%;
+  color: #444;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0;
+  padding-top: 7px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+ul.erla-accordion .notransition {
+  transition: none !important;
+}
+ul.erla-accordion .expanded {
+  color: #ffffff;
+}/*# sourceMappingURL=slide.css.map */

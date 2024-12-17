@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Estedad-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Black.woff2') format('woff2'),
+        url('../fonts/Estedad-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Bold.woff2') format('woff2'),
+        url('../fonts/Estedad-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Light.woff2') format('woff2'),
+        url('../fonts/Estedad-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Estedad-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Medium.woff2') format('woff2'),
+        url('../fonts/Estedad-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Regular.woff2') format('woff2'),
+        url('../fonts/Estedad-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-SemiBold.woff2') format('woff2'),
+        url('../fonts/Estedad-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Thin.woff2') format('woff2'),
+        url('../fonts/Estedad-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad-VF';
+    src: url('../fonts/Estedad-VF-Thin.woff2') format('woff2'),
+        url('../fonts/Estedad-VF-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad-FD-VF';
+    src: url('../fonts/Estedad-FD-VF-Thin.woff2') format('woff2'),
+        url('../fonts/Estedad-FD-VF-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Estedad-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Black.woff2') format('woff2'),
+        url('../fonts/Estedad-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Bold.woff2') format('woff2'),
+        url('../fonts/Estedad-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Light.woff2') format('woff2'),
+        url('../fonts/Estedad-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Estedad-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Medium.woff2') format('woff2'),
+        url('../fonts/Estedad-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Regular.woff2') format('woff2'),
+        url('../fonts/Estedad-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-SemiBold.woff2') format('woff2'),
+        url('../fonts/Estedad-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/Estedad-Thin.woff2') format('woff2'),
+        url('../fonts/Estedad-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad-VF';
+    src: url('../fonts/Estedad-VF-Thin.woff2') format('woff2'),
+        url('../fonts/Estedad-VF-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Estedad-FD-VF';
+    src: url('../fonts/Estedad-FD-VF-Thin.woff2') format('woff2'),
+        url('../fonts/Estedad-FD-VF-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Italic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Bold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-BoldItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-SemiBold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-LightItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-MediumItalic.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Light.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Regular.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Euclid Circular B';
+    src: url('../fonts/EuclidCircularB-Medium.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Macondo';
+    src: url('../fonts/Macondo-Regular.woff2') format('woff2'),
+        url('../fonts/Macondo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

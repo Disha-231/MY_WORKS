@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+   background-repeat: no-repeat !important;
+    background: linear-gradient(48deg, rgba(2,0,36,1) 0%, rgba(98,0,95,1) 100%);
+   font-family:'inter';
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+}
+.banner-contant span{
+    background: linear-gradient(310deg, rgba(253,116,82,1) 0%, rgba(255,66,101,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+.banner-contant h1 span{
+    background: linear-gradient(310deg, rgba(253,116,82,1) 0%, rgba(255,66,101,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+.img2{
+    top: 18%;
+    right: 30%;
+}
+.img3{
+    top: 10%;
+    left: 20%;
+    bottom: 0;
+}
+.img4{
+    top: 40%;
+    left: 24%;
+}
+.img5{
+    bottom: 12%;
+    left: 24%;
+   
+}

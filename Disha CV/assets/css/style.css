@@ -1,0 +1,476 @@
+* {
+    font-family: "nunito";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.primary {
+    color: white;
+}
+
+.bg-primary {
+    background-color: white;
+}
+
+.secondary {
+    color: #333;
+}
+
+.bg-secondary {
+    background-color: #333;
+}
+
+.black {
+    color: #212529;
+}
+
+.bg-black {
+    background-color: #212529;
+}
+
+.gray {
+    color: #1a1a1a;
+}
+
+.bg-gray {
+    background-color: #1a1a1a;
+}
+
+.yellow {
+    color: #ffc857;
+}
+.bg-yellow {
+    color: #ffc857;
+}
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "nunito";
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+.mt-50 {
+    margin-top: 150px;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.bio {
+    position: fixed;
+}
+
+
+header {
+    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 22rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img {
+    width: 100%;
+    height:170px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+header .user .name {
+    font-size: 20px;
+    color: white;
+}
+
+header .user .post {
+    font-size: 22px;
+    color: #eee;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li {
+    width: 250px;
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 10px;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover {
+    background: #ffc857;
+}
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 10px;
+    z-index: 1000;
+    display: none;
+}
+
+#changingText {
+    color: #ffd166;
+    border-right: 1px solid black;
+    animation: cursoranim 1s linear infinite;
+}
+
+@keyframes cursoranim {
+    50% {
+        border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin: 0 0 0 0;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards 1.4s;
+    -webkit-text-stroke: 2px white;
+
+    transition: 0.5s;
+}
+
+section h3 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+section p {
+    font-size: 0.9em;
+    opacity: 0;
+    animation: slideTop 1s ease forwards 1.8s;
+}
+
+section img {
+    max-width: 300px;
+    max-height: 300px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards 2s;
+    border-radius: 50%;
+}
+
+section .img {
+    animation: animate 5s ease-in-out infinite 3s;
+}
+
+section span a {
+    color: #ffc857;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section span a:hover {
+    text-shadow: 0 0 40px #ffc857;
+    color: #ffc857;
+}
+
+@keyframes slideBottom {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* edu */
+
+.edu {
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+/*	 Skills */
+#skills {
+    margin: 100 auto;
+    width: 80%;
+    max-width: 960px;
+}
+li {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 6px;
+}
+.bar-container,
+.bar {
+    position: absolute;
+    left: 0;
+    height: 5px;
+    border-radius: 20%;
+    content: "";
+}
+
+.bar-container {
+    bottom: -8px;
+    width: 100%;
+    background-color: #eee;
+    text-align: right;
+}
+.bar {
+    top: 0;
+}
+
+.pct {
+    position: absolute;
+    top: -19px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+/* form */
+
+.login-box {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ffc857;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffc857;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-box a:hover {
+    background: #ffc857;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffc857,
+        0 0 25px #ffc857,
+        0 0 50px #ffc857,
+        0 0 100px #ffc857;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffc857);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffc857);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffc857);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffc857);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}

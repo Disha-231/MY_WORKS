@@ -1,0 +1,35 @@
+- var i = 1;
+- var n = 1;
+.container
+  .carousel
+    while i < 4
+      .carousel__wrapper
+        .carousel__header
+          h2.carousel__headline Headline 
+            = i++
+          .carousel__controls
+            button.carousel__arrow.disabled.arrow-prev
+            button.carousel__arrow.arrow-next
+        ul.carousel__content
+          while n < 21
+            li.carousel__item 
+              a(href='#')
+               img.carousel__item__image(src="https://picsum.photos/id/"+[i]+[n]+"/300/300", alt="")
+               .carousel__description
+                  h3.carousel__title
+                    | Amazing Title 
+                    = n++
+                  span.carousel__subtitle
+                    | Some subtitle goes here
+      -n = 0
+
+  .disclaimer
+    p Base implementation forked from 
+     a(href='https://codepen.io/kilianso/pen/XQOGXX' target='_blank') Horizontal Scroll Containers Mobile & Desktop - Spotify Style
+     
+    p Differences include:
+    ul
+      li Written in ES6
+      li Updated design
+      li Draggable and clickable cards
+      li Fluid overflow

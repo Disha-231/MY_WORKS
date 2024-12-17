@@ -1,0 +1,178 @@
+:root {
+    --main-color: orange;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: tahoma;
+    overflow: hidden;
+  }
+  h2 {
+    color: #fff;
+    text-align: center;
+  }
+  .navbar.draggable {
+    position: absolute;
+    user-select: none;
+  }
+  .navbar {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 150px;
+    border-radius: 50%;
+    background: var(--main-color);
+    cursor: grab;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.24s ease-in-out 0.2s;
+  }
+  
+  .navbar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    border: 150px solid transparent;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.7s ease-in-out 0.07s;
+    z-index: -1;
+    display: none;
+  }
+  
+  .navbar.active .menu {
+    transition: transform 0.3s ease-in-out 0.05s, z-index 0s 0.3s;
+    transform: scale(1);
+    z-index: 1;
+    display: block;
+  }
+  
+  .navbar .menu li {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transform-origin: 75px 75px;
+    transition: all 0.3s ease-in-out 0.1s;
+  }
+  
+  .navbar.active .menu li {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar .menu li a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background: var(--main-color);
+    position: absolute;
+    font-size: 59%;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .close-menu {
+    margin-bottom: 2px;
+  }
+  
+  .navbar.active .open-menu,
+  .navbar .close-menu {
+    display: none;
+  }
+  
+  .navbar.active .close-menu,
+  .navbar .open-menu,
+  .navbar .menu {
+    display: block;
+  }
+  .navbar.active .menu li:nth-child(1) {
+    transition-delay: 0.02s;
+    transform: rotate(85deg);
+  }
+  .navbar.active .menu li:nth-child(1) a {
+    transition-delay: 0.04s;
+    transform: rotate(635deg);
+  }
+  
+  .navbar.active .menu li:nth-child(2) {
+    transition-delay: 0.04s;
+    transform: rotate(125deg);
+  }
+  .navbar.active .menu li:nth-child(2) a {
+    transition-delay: 0.08s;
+    transform: rotate(595deg);
+  }
+  
+  .navbar.active .menu li:nth-child(3) {
+    transition-delay: 0.06s;
+    transform: rotate(165deg);
+  }
+  .navbar.active .menu li:nth-child(3) a {
+    transition-delay: 0.12s;
+    transform: rotate(555deg);
+  }
+  .navbar.active .menu li:nth-child(4) {
+    transition-delay: 0.08s;
+    transform: rotate(205deg);
+  }
+  .navbar.active .menu li:nth-child(4) a {
+    transition-delay: 0.16s;
+    transform: rotate(515deg);
+  }
+  
+  .navbar.active .menu li:nth-child(5) {
+    transition-delay: 0.1s;
+    transform: rotate(245deg);
+  }
+  .navbar.active .menu li:nth-child(5) a {
+    transition-delay: 0.2s;
+    transform: rotate(475deg);
+  }
+  .navbar.active .menu li:nth-child(6) {
+    transition-delay: 0.12s;
+    transform: rotate(285deg);
+  }
+  .navbar.active .menu li:nth-child(6) a {
+    transition-delay: 0.24s;
+    transform: rotate(435deg);
+  }
+  .navbar.active .menu li:nth-child(7) {
+    transition-delay: 0.14s;
+    transform: rotate(325deg);
+  }
+  .navbar.active .menu li:nth-child(7) a {
+    transition-delay: 0.28s;
+    transform: rotate(395deg);
+  }
+  .navbar.active .menu li:nth-child(8) {
+    transition-delay: 0.16s;
+    transform: rotate(365deg);
+  }
+  .navbar.active .menu li:nth-child(8) a {
+    transition-delay: 0.3s;
+    transform: rotate(355deg);
+  }
+  
+  .navbar.active .menu li:nth-child(9) {
+    transition-delay: 0.18s;
+    transform: rotate(405deg);
+  }
+  .navbar.active .menu li:nth-child(9) a {
+    transition-delay: 0.32s;
+    transform: rotate(315deg);
+  }
+  

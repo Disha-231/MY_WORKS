@@ -1,0 +1,43 @@
+$color-white: #ffffff;
+$color-light: #f1f5f8;
+$color-black: #252a32;
+$color-blue: #148cb8;
+$color-red: #d32f2f;
+
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+
+
+
+
+// Main
+.main {
+  .scroll {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin: 2.5rem 0;
+    cursor: default;
+    overflow: scroll hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px 1.25rem;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.active {
+      cursor: grab;
+      cursor: -webkit-grab;
+    }
+
+    
+  }
+}

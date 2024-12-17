@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonsi-Personal Portfolio</title>
+  <link rel="shortcut icon" href="img/letter-j (6).png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .add {
+      left: -100% !important;
+      display: flex;
+      position: absolute;
+    }
+
+    input {
+      outline: none;
+    }
+     
+    textarea {
+      outline: none;
+    }
+
+    .color {
+      color: #14b8a6;
+      border-bottom:1px solid  #14b8a6;
+    }
+    
+    h1 {
+      font-weight: 400;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .card {
+      display: block !important;
+    }
+
+    .cards {
+      display: grid !important;
+    }
+
+    #container {
+      padding-bottom: 80px !important;
+      padding-top: 0px !important;
+    }
+
+    .heading {
+      padding-bottom: 40px;
+    }
+
+    h1 {
+      text-align: start;
+      margin: 0px;
+    }
+
+    .tabs-content {
+      border: 0px !important;
+      background: none !important;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Nav tabs*/
+
+    #container {
+      padding-left: 10vw;
+      padding-right: 10vw;
+      padding-top: 5vh;
+      padding-bottom: 20vh;
+    }
+    .j {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #0c1423;
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+}
+    .tabs-nav ul {
+      margin: 0;
+      padding: 20px;
+    }
+
+    .tabs-nav li {
+      display: inline-block;
+      background: rgba(23, 23, 23);
+      color: #14b8a6;
+      border: transparent;
+      margin-right: 5px;
+      border-radius: 5px;
+    }
+
+    .tabs-nav a {
+      display: block;
+      padding: 10px 15px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    /* Active tab */
+
+    .tabs-nav li.active {
+      color: #14b8a6;
+      border-width: 1px 1px 1px 1px;
+      border-style: solid;
+      border-color: #14b8a6;
+    }
+
+    .tabs-nav li.active a {
+      color: inherit;
+    }
+
+    /* Tab content */
+
+
+
+    .tabs-content IMG {
+      margin-right: 10px;
+    }
+
+    /* Hide all but first content div */
+
+    .tabs-content div:not(:first-child) {
+      display: none;
+    }
+
+
+    /* Nav tabs*/
+
+    #changingText {
+      color: #14b8a6;
+      border-right: 4px solid #14b8a6;
+      animation: cursoranim 0.7s linear infinite;
+    }
+
+    @keyframes cursoranim {
+      50% {
+        border-right: 1px solid rgba(0, 0, 0, 0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-900">
+  <header class="px-6  md:px-12 py-6 lg:py-0 sticky w-full  z-10 bg-neutral-900 top-0 ">
+    <div class="flex justify-between items-center">
+      <div class="logo flex justify-center items-center">
+        <img src="img/letter-j (6).png" class="w-[40px]" alt="">
+        <h2 class="text-white font-sans text-2xl ps-2">JONSI</h2>
+      </div>
+      <div  class="menu lg:justify-center absolute left-0 duration-700  bg-neutral-950  lg:bg-transparent  w-full lg:flex lg:static lg:justify-end">
+        <ul
+          class="flex py-8  items-center flex-col absolute left-0 bg-neutral-950  lg:bg-transparent w-full top-10 lg:flex lg:flex-row lg:w-max lg:static">
+          <li class="text-white hover:text-teal-500 pe-10  pb-6 lg:pb-0">
+            <a href="#home" class="color border-b-2 border-transparent  duration-700 font-sans hover:border-teal-500 pb-1">HOME</a>
+          </li>
+          <li class="text-white pe-10 pb-6 lg:pb-0">
+            <a href="#about"
+              class="hover:text-teal-500 border-b-2 border-transparent duration-700 hover:border-b-2 hover:border-teal-500 hover:pb-1">ABOUT
+              ME</a>
+          </li>
+          <li class="text-white pe-10 pb-6 lg:pb-0">
+            <a href="#aducation"
+              class="hover:text-teal-500 font-sans border-b-2 border-transparent duration-700 hover:border-b-2 hover:border-teal-500 hover:pb-1">
+              EDUCATION</a>
+          </li>
+          <li class="text-white pe-10 pb-6 lg:pb-0">
+            <a href="#project"
+              class="hover:text-teal-500 font-sans border-b-2 border-transparent duration-700 hover:border-b-2 hover:border-teal-500 hover:pb-1">PROJECTS</a>
+          </li>
+          <li class="text-white pe-10 ">
+            <a href="#contact"
+              class="hover:text-teal-500 font-sans border-b-2 border-transparent duration-700 hover:border-b-2 hover:border-teal-500 hover:pb-1">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icon hidden lg:flex">
+        <a href="https://www.linkedin.com/in/bharoliya-jonsi-9424b8255/" target="_blank"
+          class="fa-brands fa-linkedin-in text-white pe-6 text-xl duration-700 hover:text-teal-500"></a>
+        <a href="https://www.behance.net/jonsibharoliya" target="_blank"
+          class="fa-brands fa-behance text-white pe-6 text-xl duration-700 hover:text-teal-500"></a>
+        <a href="https://github.com/Jonsi-Bharoliya" target="_blank"
+          class="fa-brands fa-github text-white text-xl hover:text-teal-500 duration-700"></a>
+      </div>
+      <div class="toggle flex lg:hidden">
+        <i class="fa-solid fa-bars text-teal-500 text-2xl"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- slider start  -->
+  <section class=" pt-0 lg:pt-20  lg:pt-36 pb-0 lg:pb-28 " id="home">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 xl:grid-cols-2 ">
+        <div class="ps-10 py-20 px-8 md:px-0">
+          <span
+            class="text-white font-sans text-md bg-neutral-800/50  bg-opacity-25 p-2 rounded-md px-6 shadow-2xl shadow-neutral-900 tracking-widest">JONSI
+            BHAROLIYA</span>
+          <h2 class="text-white  text-3xl sm:text-5xl 2xl:text-7xl font-sans font-medium pt-10 pb-6 capitalize">hay! i'm
+            jonsi</h2>
+          <h2 class="text-teal-500 font-sans text-3xl sm:text-5xl 2xl:text-7xl font-medium ">I'm a <span
+              id="changingText"></span></h2>
+          <p class="text-white   font-sans text-sm md:text-md py-10 leading-relaxed">I am flexible, reliable and possess excellent
+            time keeping skills. I am a mature team worker and adaptable to all challenging situations. I will try my
+            best to give the best to the company so that the company will grow up. I am able to work well both in a team
+            environment as well as using own initiative.</p>
+          <div class="btn mt-4 cursor-pointer">
+            <span
+              class="bg-teal-500 text-white py-3 px-10 rounded-lg text-lg font-sans border-2 border-transparent  hover:text-white hover:bg-transparent duration-700 hover:border-2 hover:border-teal-500">
+              <a href="CV.pdf" download>Download CV</a>
+            </span>
+          </div>
+        </div>
+        <div class=" hidden xl:flex   relative ">
+          <img src="img/Group 5495 (4).png"
+            class="shadow-md shadow-neutral-900 w-[70%] opacity-100 absolute   top-[-100px] right-[100px]" alt="">
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- slider end  -->
+
+  <!-- about start  -->
+  <section class="pt-20  pb-10 bg-neutral-900 z-0" id="about">
+    <div class="container mx-auto">
+      <div
+        class="text-center  lg:w-[1000px] 2xl:w-[1000px] mx-auto shadow-md shadow-neutral-950/25 p-8 py-10 lg:p-20 rounded-lg">
+        <span
+          class="text-white font-sans text-md bg-neutral-800/75  bg-opacity-25 p-2 rounded-md px-6 shadow-2xl shadow-neutral-900 tracking-widest">ABOUT
+          ME</span>
+        <h2 class="text-white font-sans font-medium text-3xl md:text-4xl pt-8 pb-4 leading-tight">I'm <span
+            class="text-teal-500 font-sans text-3xl md:text-4xl font-medium"> Jonsi Bharoliya ,</span> a Web Designer</h2>
+        <p class="text-white font-sans text-sm md:text-md leading-relaxed">I am flexible, reliable and possess excellent time
+          keeping skills. I am an enthusiastic, self motivated, reliable, responsible and hard working person. I am a
+          mature team worker and adaptable to all challenging situations. I will try my best to give the best to the
+          company so that the company will grow up. I am able to work well both in a team environment as well as using
+          own initiative.</p>
+        <div class="pt-6  mx-auto ">
+          <h2
+            class="text-teal-500 text-lg font-normal font-sans py-3 w-[350px] text-center mx-auto border-b-2 border-zinc-600">
+            Name : <span class="text-white text-lg"> Jonsi Bharoliya</span></h2>
+          <h2 class="text-teal-500 text-lg font-normal font-sans py-3  w-[350px] mx-auto border-b-2 border-zinc-600">
+            Email : <span class="text-white text-lg"> bharoliyajonsi123@gmail.com</span></h2>
+          <h2 class="text-teal-500 text-lg font-normal font-sans py-3  w-[350px] mx-auto border-b-2 border-zinc-600">
+            From : <span class="text-white text-lg"> Surat, Gujarat, India</span></h2>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- about end  -->
+
+  <!-- education start  -->
+  <section class="py-10 " id="aducation">
+    <div class="container mx-auto">
+      <div class="btn mt-14 text-center">
+        <span
+          class="text-white font-sans text-md bg-neutral-800/25  bg-opacity-25 p-2 rounded-md px-6 drop-shadow-2xl tracking-widest ">EDUCATION</span>
+      </div>
+      <h2 class="text-white text-3xl lg:text-5xl font-sans font-medium py-8 capitalize text-center">My Education</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 px-10 lg:px-0 2xl:px-44 gap-8 py-6 ">
+        <div class="  bg-neutral-900 ps-10  py-8  rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 ">
+          <span class="text-white font-sans text-md bg-teal-500   p-1  rounded-md px-3 drop-shadow-2xl ">2022 -
+            2023</span>
+          <h2 class="text-white font-sans text-xl sm:text-2xl font-normal pt-6 pb-2">Master in Front end Design </h2>
+          <p class="text-teal-500 font-sans text-lg ">Red & White Multimedia Education </p>
+        </div>
+        <div class="bg-neutral-900 px-10 py-8 rounded-lg  border-2 border-neutral-800 shadow-md shadow-neutral-950/25">
+          <span class="text-white font-sans text-md bg-teal-500   p-1 rounded-md px-3 drop-shadow-2xl ">2021 -
+            2022</span>
+         <div class="sm:flex justify-between">
+          <h2 class="text-white font-sans text-xl sm:text-2xl font-normal pt-6 pb-2">Bachelor of Commerce </h2>
+          <h1 class="text-white font-sans text-lg  sm:text-xl font-normal sm:pt-6 pb-2">(6 SGPA)</h1>
+         </div>
+          <p class="text-teal-500 font-sans text-lg ">J.Z. Shah Arts & H.P. Desai Commerce College </p>
+        </div>
+        <div class="bg-neutral-900 px-10 py-8  rounded-lg  border-2 border-neutral-800 shadow-md shadow-neutral-950/25">
+          <span class="text-white font-sans text-md bg-teal-500   p-1 rounded-md px-3 drop-shadow-2xl ">2018 -
+            2019</span>
+          <div class="sm:flex justify-between">
+            <h2 class="text-white font-sans text-xl sm:text-2xl font-normal pt-6 pb-2">H.S.C </h2>
+          <h1 class="text-white font-sans  text-lg sm:text-xl font-normal sm:pt-6 pb-2">(86.28%)</h1>
+          </div>
+          <p class="text-teal-500 font-sans text-lg ">Nalanda Vidhyalya-2 </p>
+        </div>
+        <div class="bg-neutral-900 px-10 py-8 rounded-lg  border-2 border-neutral-800 shadow-md shadow-neutral-950/25">
+          <span class="text-white font-sans text-md bg-teal-500   p-1  rounded-md px-3 drop-shadow-2xl ">2016 -
+            2017</span>
+         <div class="sm:flex justify-between">
+          <h2 class="text-white font-sans text-xl sm:text-2xl font-normal pt-6 pb-2">S.S.C </h2>
+          <h1 class="text-white font-sans   text-lg sm:text-xl font-normal sm:pt-6 pb-2">(73%)</h1>
+         </div>
+          <p class="text-teal-500 font-sans text-lg ">Nalanda Vidhyalya-2 </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- education end  -->
+
+  <!-- portfolio start  -->
+  <section class="py-10 bg-neutral-900 " id="project">
+    <div class="container mx-auto">
+      <div class="btn mt-14 text-center">
+        <span
+          class="text-white font-sans text-md bg-neutral-800/25  bg-opacity-25 p-2  rounded-md px-6 drop-shadow-2xl tracking-widest ">MY
+          WORK</span>
+      </div>
+      <h2 class="text-white text-3xl  lg:text-5xl font-sans font-medium pt-8 capitalize text-center">Protfolio</h2>
+  </section>
+  <div id="container">  
+    <heading class="tabs-nav text-center ">
+      <ul class="pb-4">
+        <li class="active"><a href="#tab1">Coading</a></li>
+        <li><a href="#tab2">Designing</a></li>
+      </ul>
+    </heading>
+
+    <section class="tabs-content">
+      <div id="tab1">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  pt-8 cards">
+          <div class="bg-neutral-900 p-4  rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full overflow-hidden rounded-lg  d-block card">
+              <a href="PR1/index.html" target="_blank">
+                <img src="img/Screenshot 2023-06-28 221953.png"
+                  class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-md 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">Digital
+              Agency Website Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4 border-2 border-neutral-800 shadow-md shadow-neutral-950/25  rounded-lg card">
+            <div class="w-full overflow-hidden rounded-lg  d-block card">
+              <a href="Portfolio 2/index.html" target="_blank">
+                <img src="img/Screenshot 2023-06-28 130245.png"
+                  class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium  pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 "> Digital
+              Universe Website Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4 border-2 border-neutral-800 shadow-md shadow-neutral-950/25  rounded-lg  card">
+            <div class="w-full overflow-hidden rounded-lg  d-block card">
+              <a href="Portfolio 3/index.html" target="_blank">
+                <img src="img/Screenshot 2023-06-28 221319.png"
+                  class=" rounded-lg  hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+              Becoaching Website Design</p>
+          </div>
+          <div class="  bg-neutral-900 p-4 border-2 border-neutral-800 shadow-md shadow-neutral-950/25  rounded-lg card ">
+            <div class="w-full overflow-hidden rounded-lg  d-block card">
+              <a href="Portfolio 4/index.html" target="_blank">
+                <img src="img/Screenshot 2023-06-28 130423.png"
+                  class=" rounded-lg  hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">HUE
+              ADMIN PANEL Design</p>
+
+          </div>
+          <div class="bg-neutral-900 p-4 border-2 border-neutral-800 shadow-md shadow-neutral-950/25  rounded-lg  card">
+            <div class="w-full overflow-hidden rounded-lg  d-block card">
+              <a href="Portfolio 5/index.html" target="_blank">
+                <img src="img/Screenshot 2023-06-28 222650.png"
+                  class=" rounded-lg  hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">Oction
+              NFT Website Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4 border-2 border-neutral-800 shadow-md shadow-neutral-950/25  rounded-lg  card">
+            <div class="w-full overflow-hidden rounded-lg  d-block card">
+              <a href="Portfolio 6/index.html" target="_blank">
+                <img src="img/Screenshot 2023-06-28 130142.png"
+                  class=" rounded-lg  hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">Driveto
+              Driving Website Design</p>
+          </div>
+        </div>
+      </div>
+      <div id="tab2">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 px-3 py-10 cards">
+          <div class="bg-neutral-900 p-4  rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full h-[220px]  overflow-hidden rounded-lg  d-block card">
+              <a href="https://www.behance.net/gallery/154906387/Jewellary" target="_blank"
+                class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                <img src="img/pr-1 design.png" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+              Jewellery Website Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4  rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full h-[220px] overflow-hidden rounded-lg  d-block card">
+              <a href="https://www.behance.net/gallery/155243205/Event-Management" target="_blank"
+                class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                <img src="img/pr-2 design.png" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">Event
+              Management Website Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4  rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full h-[220px] overflow-hidden rounded-lg  d-block card">
+              <a href="https://www.behance.net/gallery/173620357/Fitness-Mobile-App" target="_blank"
+                class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                <img src="img/pr-3 design.png" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+            <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Application</h2>
+            <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">Fitness
+              Mobile Application Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4   rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full h-[230px] overflow-hidden rounded-lg  d-block card">
+              <a href="https://www.behance.net/gallery/175031309/Homeland-Furniture-Application" target="_blank"
+                class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                <img src="img/pr-4 design.jpg" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+              <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Application</h2>
+              <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+                 Homeland  Application Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4   rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full h-[230px] overflow-hidden rounded-lg  d-block card">
+              <a href="https://www.behance.net/gallery/175926707/FootStep-Shoes-Mobile-App" target="_blank"
+                class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                <img src="img/pr-5 design.png " class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+              <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Application</h2>
+              <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+                 Footstep  Application Design</p>
+          </div>
+          <div class="bg-neutral-900 p-4   rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+            <div class="w-full h-[230px] overflow-hidden rounded-lg  d-block card">
+              <a href="https://www.behance.net/gallery/176835841/Construction-Website" target="_blank"
+                class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                <img src="img/pr-6 design.png" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+              </a>
+            </div>
+              <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+              <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+                 Construction  Website Design</p>
+          </div>
+            <div class="bg-neutral-900 p-4   rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+              <div class="w-full h-[230px] overflow-hidden rounded-lg  d-block card">
+                <a href="https://www.behance.net/gallery/176997459/BookUs-Mobile-App" target="_blank"
+                  class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                  <img src="img/pr-7 design.png" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+                </a>
+              </div>
+                <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Application</h2>
+                <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+                  Bookus  Application Design</p>
+            </div>
+            <div class="bg-neutral-900 p-4   rounded-lg border-2 border-neutral-800 shadow-md shadow-neutral-950/25 card">
+              <div class="w-full h-[230px] overflow-hidden rounded-lg  d-block card">
+                <a href="https://www.behance.net/gallery/177098035/Agzone-Farm-Product-Website" target="_blank"
+                  class=" text-white pe-6 text-md lg:text-xl duration-700 hover:text-teal-500">
+                  <img src="img/pr-8 design.png" class=" rounded-lg hover:scale-110 overflow-hidden duration-700" alt="">
+                </a>
+              </div>
+                <h2 class="text-teal-500 font-sans text-md lg:text-xl font-medium pt-4 pb-3">Website</h2>
+                <p class="text-white font-serif text-lg 2xl:text-2xl font-medium hover:text-teal-500 duration-700 ">
+                  Farm Product Website Design</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </section>
+  <!-- portfolio end -->
+
+  <!-- contact start  -->
+  <section class="pb-8 md:py-8" id="contact">
+    <div class="container mx-auto">
+      <div class="btn mt-14 text-center">
+        <span
+          class="text-white font-sans text-md bg-neutral-800/25  bg-opacity-25 p-2 rounded-md px-6 drop-shadow-2xl tracking-widest ">CONTACT</span>
+      </div>
+      <h2 class="text-white text-3xl lg:text-5xl font-sans font-medium pt-8 pb-4 capitalize text-center">Contact With Me
+      </h2>
+      <div class="xl:flex  pt-12  justify-between items-center">
+        <div
+          class=" xl:ps-12  py-6 border-2 border-neutral-800 w-[400px] rounded-lg text-center xl:text-left mx-auto xl:mx-0 mb-10 xl:mb-0  ">
+          <h2 class="text-teal-500 font-sans text-3xl font-medium pb-3">Jonsi Bharoliya</h2>
+          <span class="text-white font-sans text-xl font-medium ">Web Designer</span>
+          <p class="text-white font-sans text-sm md:text-md  pt-4">I am available for Web Design  and <br> UI & UX Design work. 
+            Connect with <br>  me via and call in to my account.</p>
+          <div class="flex items-center pb-2 pt-6 justify-center  xl:justify-start">
+            <i class="fa-solid fa-phone text-teal-500 pe-3 text-lg"></i>
+            <span class="text-white font-sans text-lg font-normal">+91 9925849126</span>
+          </div>
+          <div class="flex items-center justify-center  xl:justify-start">
+            <i class="fa-solid fa-envelope text-teal-500 pe-4 text-lg"></i>
+            <span class="text-white font-sans text-lg font-normal">bharoliyajonsi@gmail.com</span>
+          </div>
+          <div class="icon pt-6">
+            <a href="https://www.linkedin.com/in/bharoliya-jonsi-9424b8255/" target="_blank"
+              class="fa-brands fa-linkedin-in text-white pe-5 text-2xl duration-700 hover:text-teal-500"></a>
+            <a href="https://www.behance.net/jonsibharoliya" target="_blank"
+              class="fa-brands fa-behance text-white pe-5 text-2xl duration-700 hover:text-teal-500"></a>
+            <a href="https://github.com/Jonsi-Bharoliya" target="_blank"
+              class="fa-brands fa-github text-white text-2xl hover:text-teal-500 duration-700 pe-5"></a>
+            <a href="https://www.instagram.com/j_design_011/" target="_blank"
+              class="fa-brands fa-instagram text-white text-2xl hover:text-teal-500 duration-700"></a>
+          </div>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 px-10 mx-0 lg:mx-6 xl:mx-0 lg:px-0">
+            <input type="text" placeholder="Name"
+              class="bg-neutral-900 h-[60px] w-[full] xl:w-[400px] 2xl:w-[500px] ps-6 rounded-lg placeholder-neutral-500 text-white font-sans border-2 border-neutral-800">
+            <input type="text" placeholder="Email"
+              class="bg-neutral-900 h-[60px] w-[full] ps-6 placeholder-neutral-500 text-white font-sans  rounded-lg border-2 border-neutral-800 ">
+          </div>
+          <div class="grid grid-cols-1 gap-3 pt-6 px-10 lg:px-0 mx-0 lg:mx-6 xl:mx-0">
+            <textarea placeholder="Your Message" id="" cols="30" rows="6"
+              class="bg-neutral-900 w-full placeholder-neutral-500 text-white font-sans  rounded-lg border-2 border-neutral-800  pt-4 ps-6"></textarea>
+          </div>
+          <div class="btn mt-9 text-center cursor-pointer">
+            <span
+              class="bg-teal-500 text-white py-3 px-10 rounded-lg text-lg font-sans border-2 border-transparent  hover:text-white hover:bg-transparent duration-700 hover:border-2 hover:border-teal-500">Send
+              Message</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact end  -->
+  <section class="py-6  border-t-2 border-zinc-600/25">
+    <h2 class="text-white text-md font-sans text-center">Design & Developed by Jonsi Bharoliya</h2>
+  </section>
+  
+
+
+  <script src="js/tailwind.config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('.tabs-nav a').click(function () {
+
+        // Check for active
+        $('.tabs-nav li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        // Display active tab
+        let currentTab = $(this).attr('href');
+        $('.tabs-content div').hide();
+        $(currentTab).show();
+
+        return false;
+      });
+    });
+  </script>
+
+  <script>
+    //you can change the text, but you need to keep same format [yourtext, color];
+    let yourtext = [
+      ["Web Designer", " #14b8a6"],
+
+    ];
+
+    let x = 0;
+    let y = 0;
+    //how fast typing is
+    let wait = 300;
+    //how long you want to text stay before overwriting
+    let additionalwait = 5;
+    let txt = yourtext[0][0].split("");
+    let out = "";
+    let retyping = setInterval(function () {
+      document.getElementById("changingText").innerHTML = out;
+      if (x > txt.length - 1) {
+      } else {
+        out += txt[x];
+      }
+      x++;
+      if (x == txt.length + 2 + additionalwait) {
+        if (y == yourtext.length - 1) {
+          y = 0;
+          txt = yourtext[y][0].split("");
+          out = "";
+          document.getElementById("changingText").innerHTML = out;
+          document.getElementById("changingText").style.color = yourtext[y][1];
+          x = 0;
+        } else {
+          y += 1;
+          txt = yourtext[y][0].split("");
+          out = "";
+          document.getElementById("changingText").innerHTML = out;
+          document.getElementById("changingText").style.color = yourtext[y][1];
+          x = 0;
+        }
+      }
+    }, wait);
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".toggle").click(function () {
+        $(".menu").toggleClass("add");
+      });
+    })
+  </script>
+
+  <script>
+    $('ul li a').click(function () {
+
+      if ($('ul li a').hasClass("color")) {
+        $('ul li a').removeClass("color");
+      }
+
+      $(this).addClass("color");
+
+    });
+  </script>
+</body>
+
+</html>

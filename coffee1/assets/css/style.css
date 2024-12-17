@@ -1,0 +1,132 @@
+.font-white{
+    color: rgb(255, 255, 255) !important;
+}
+.bg-success{
+    background-color: #4d8b55!important;
+}
+.btn-success{
+    background-color: #4d8b55!important;
+}
+.text-success{
+    color: #4d8b55!important;
+}
+.navbar-collapse{
+    flex-grow: 0!important;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+nav ul li .drop-down{
+    opacity: 0;
+    visibility: hidden;
+    top: 100px;
+    width: 200px;
+    transition: 0.9s;
+}
+nav ul li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+    top: 80px;
+}
+nav ul li .drop-down ul li{
+    padding: 7px 0px;
+}
+nav ul li .drop-down ul li:hover{
+    background-color: #17c92f;
+}
+ul{
+    justify-content: center;
+}
+.img-black{
+    background-color: #17c92f;
+}
+
+.button-btn{
+    background-color:#365a3e;
+    color:white;
+    border-radius: 35px;
+    padding: 10px 50px;
+    transition: 0.9s;
+    border: none;
+}
+.button-btn:hover{
+    background-color: white;
+    color: black;
+}
+/* banner st */
+.banner{
+    background-image:url('../img/slide_01-1.jpg');
+}
+.card{
+    position: relative;
+    margin-top: -60px;
+    border-radius: 0!important;
+   }
+.card .card-content{
+    position:absolute;
+   }
+.card-content{
+    bottom: 20px;
+    text-align: center;
+    display: block;
+   }
+.card{
+    text-align: center;
+    display: block;
+   }
+.card .card-content span{
+    text-align: center!important;
+}
+.card .card-image::before{
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.544);
+    z-index: 1;
+}
+.card .card-content{
+    z-index: 2;
+    border: none;
+}
+.card{
+    overflow: hidden;
+}
+.card:hover .card-image{
+    transform: scale(1.1);
+    transition: 1s;
+    overflow: hidden;
+}
+/* benner end */
+/* kaffa-menu  */
+.kaffa{
+    background-image: url('../img/menu_parallax.jpg');
+}
+.kaffa .kaffa-menu{
+    background-image: url('../img/menu-bg.png');
+    padding: 250px 70px;
+    margin: 50px 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.scrollbar{
+    height: 550px;
+    overflow-y: auto;
+    
+}
+.scrollbar::-webkit-scrollbar{
+    background-color: rgba(197, 175, 114, 0.616);
+    width: 8px;
+
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    background-color: rgba(24, 24, 24, 0.5);
+}

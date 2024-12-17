@@ -1,0 +1,23 @@
+.main .scroll {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  margin: 2.5rem 0;
+  cursor: default;
+  overflow: scroll hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0px 1.25rem;
+  scrollbar-width: none;
+}
+.main .scroll::-webkit-scrollbar {
+  display: none;
+}
+.main .scroll.active {
+  cursor: grab;
+  cursor: -webkit-grab;
+}/*# sourceMappingURL=scroll.css.map */

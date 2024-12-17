@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+  </head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+  <body>
+    <h1>Recipes</h1>
+    <table id="recipes-list">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>ingredient</th>
+          <th>Instructions</th>
+          <th>Prep Time (mins)</th>
+          <th>Cook Time (mins)</th>
+          <th>Servings</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script>
+      // API URL
+      const url = fetch("https://dummyjson.com/recipes");
+      url
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data.recipes);
+
+          const recipesTableBody = document.querySelector(
+            "#recipes-list tbody"
+          );
+          data.recipes.forEach((recipe) => {
+            const row = document.createElement("tr");
+
+            const idCell = document.createElement("td");
+            idCell.innerHTML = recipe.id;
+            row.appendChild(idCell);
+
+            const titleCell = document.createElement("td");
+            titleCell.innerHTML = recipe.name;
+            row.appendChild(titleCell);
+
+            const ingredientsCell = document.createElement("td");
+            ingredientsCell.innerHTML = recipe.ingredients
+              .map((ingredient) => `<li>${ingredient}</li>`)
+              .join("");
+            row.appendChild(ingredientsCell);
+
+            const instructionsCell = document.createElement("td");
+            instructionsCell.innerHTML = recipe.instructions
+              .map((step) => `<li>${step}</li>`)
+              .join("");
+            row.appendChild(instructionsCell);
+
+            const prepTimeCell = document.createElement("td");
+            prepTimeCell.innerHTML = recipe.prepTimeMinutes;
+            row.appendChild(prepTimeCell);
+
+            const cookTimeCell = document.createElement("td");
+            cookTimeCell.innerHTML = recipe.cookTimeMinutes;
+            row.appendChild(cookTimeCell);
+
+            const servingsCell = document.createElement("td");
+            servingsCell.innerHTML = recipe.servings;
+            row.appendChild(servingsCell);
+
+            recipesTableBody.appendChild(row);
+          });
+        });
+    </script>
+  </body>
+</html>

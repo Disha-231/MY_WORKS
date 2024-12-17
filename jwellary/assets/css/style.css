@@ -1,0 +1,263 @@
+*{
+    font-family: 'poppins';
+}
+  
+.container{
+  max-width:1650px !important;
+}
+
+
+.bg-dark{
+    background-color: #242e37 !important;
+}
+.text-dark{
+  color: #03465f !important;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.fs-13{
+  font-size: 13px;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+
+.fs-22{
+  font-size: 22px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-35{
+    font-size:35px;
+}
+
+ul , li {
+    list-style: none;
+}
+/* top button */
+
+#scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid #03465f;
+    cursor: pointer;
+  }
+  #scroll-top span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #03465f;
+  }
+  #scroll-top:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 20px 5px #03465F;
+  }  
+
+  nav .discount .navigation ul li a{
+    transition: 0.5s !important;
+    position: relative;
+    overflow: hidden;
+    border:0 solid transparent !important;
+    padding: 3px !important;
+    border-radius: 3px;
+  } 
+
+  nav .discount .navigation ul li:hover a {
+    color: white !important;
+    border: 1px solid #fff !important;
+    transform: translateY(-5px) !important;
+    background-color: #ffffff1b;
+  }
+
+  /* card section */
+
+
+  .items .card{
+    background-image: url(../img/item-1.jpeg.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 200px ;
+    transition: 0.4s;
+    backdrop-filter: grayscale(3);
+  }
+
+  .items .card .card-content{
+    background: linear-gradient( 180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6474964985994398) 50%, rgba(0,0,0,0) 100%) !important;
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  .items .card:hover .card-content{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .items .card .card-content a{
+    background-color: transparent !important;
+    border: 1px solid #fff;
+    transition: all 1s ease;
+  }
+
+  .items .card .card-content a:hover{
+    background-color: white !important;
+    color: #03465f;
+  }
+
+  .items .card .card-content a:hover{
+    color: #03465f;
+  }
+
+  .card-text a{
+    transition: 0.5s;
+    background-color: #fff !important;
+    color: #03465f;
+    border: 1px solid transparent;
+  }
+  
+  .card-text a:hover{
+    color: #000;
+    border: 1px solid #03465f;
+  }
+
+  .Categories .c-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    width: 450px;
+    position: relative;
+  }
+  .Categories .c-content{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    margin-left: -11px;
+    transition: 1s !important;
+    opacity: 0;
+    visibility: none;
+  }
+
+  .Categories .c-box:hover .c-content{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .top .top-image .top-span{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: none;
+    transform: translatey(-100px);
+    transition: all 0.5s;
+  }
+
+  .top .top-image:hover .top-span{
+    opacity: 1;
+    visibility: visible;
+    transform: translatey(0);
+  }
+
+  .offers .offer-box a{
+    transition: 0.5s;
+    border: none;
+  }
+
+  .offers .offer-box a:hover{
+    background-color: #fff !important;
+    border: none;
+  }
+
+ nav .all #dropdown{
+  opacity: 0;
+  visibility: none;
+  background-color: #fff;
+  color: #000 !important;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+ }
+
+ nav .all:hover #dropdown{
+  opacity: 1;
+  visibility: visible;
+  transform: translatey(0);
+ }
+ 
+
+ nav .all #dropdown{
+  transition: 0.5s;
+  transform: translateY(50px);
+ }
+
+ nav .all #dropdown li:hover a{
+  color: #03465f;
+ }
+
+ nav .all #dropdown li:hover{
+  background-color: #fff !important;
+}
+
+.news{
+  background-image: url(../img/dm-logo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.news .news-input a{
+  transition: all 0.7s;
+}
+
+.news .news-input a:hover{
+  background-color: #fff !important;
+}
+
+footer .fst a{
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+footer a::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #03465f;
+  transition: 0.4s ease-in;
+}
+
+footer a:hover::after{
+  width: 40%;
+}
