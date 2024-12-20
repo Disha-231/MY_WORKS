@@ -6,8 +6,8 @@
 }
 
 .form-control{
-     background: white!important;
+     background: rgb(206, 204, 204)!important;
      background-blend-mode:color-dodge;
      opacity: 0.5;
-     border-radius: 1px solid #ced4da!important;
+     border-radius: 1px solid #36383a!important;
 }
